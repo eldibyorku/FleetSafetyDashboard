@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "25xGp/efqj1ydUguy2ilruASX55MBfSXCfWYxwCNy1w=",
+  "Source": "FleetSafetyBackend",
+  "BasePath": "_content/FleetSafetyBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
