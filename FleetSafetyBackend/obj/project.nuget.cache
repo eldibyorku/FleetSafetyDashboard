@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QLYwfdoGkOk=",
+  "success": true,
+  "projectFilePath": "/Users/ahmedel-dib/Desktop/FleetSafetyDashboard/FleetSafetyBackend/FleetSafetyBackend.csproj",
+  "expectedPackageFiles": [
+    "/Users/ahmedel-dib/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "/Users/ahmedel-dib/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
