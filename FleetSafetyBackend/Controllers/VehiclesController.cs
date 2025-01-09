@@ -1,17 +1,36 @@
-using Microsoft.AspNetCore.Mvc;
+using FleetSafetyBackend.Data; // Include the namespace for the DbContext
+using Microsoft.AspNetCore.Mvc; // For API controllers
+using Microsoft.EntityFrameworkCore; // For async database queries
+using System.Threading.Tasks;
 
-[ApiController]
-[Route("api/[controller]")]
-public class VehiclesController : ControllerBase
+namespace FleetSafetyBackend.Controllers
 {
-    [HttpGet]
-    public IActionResult GetVehicles()
+    [ApiController]
+    [Route("api/[controller]")]
+    public class VehiclesController : ControllerBase
     {
-        var vehicles = new[]
+        private readonly FleetSafetyDbContext _context;
+
+        // Inject DbContext into the controller
+        public VehiclesController(FleetSafetyDbContext context)
         {
-            new { Id = 1, Name = "Truck A", Status = "Online" },
-            new { Id = 2, Name = "Truck B", Status = "Offline" }
-        };
-        return Ok(vehicles);
+            _context = context;
+        }
+
+        // GET /api/vehicles
+        [HttpGet]
+        public async Task<IActionResult> GetVehicles()
+        {
+            try
+            {
+                // Fetch all vehicles from the database
+                var vehicles = await _context.Vehicles.ToListAsync();
+                return Ok(vehicles);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Database connection failed: {ex.Message}");
+            }
+        }
     }
 }

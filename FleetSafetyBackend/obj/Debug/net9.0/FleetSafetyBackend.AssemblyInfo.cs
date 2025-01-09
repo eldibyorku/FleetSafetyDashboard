@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FleetSafetyBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+684b5cdfab5e85400aceca4e87b0529e95621787")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa1d4e40b015601f116cd16642cb712305772c8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("FleetSafetyBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FleetSafetyBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
